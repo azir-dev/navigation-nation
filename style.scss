@@ -1,0 +1,180 @@
+$primaryBg: #fff;
+$homeBg: #21292c;
+$aboutBg: #aa3e39;
+$skillsBg: #aa6e39;
+$projectsBg: #236267;
+$contactBg: #2c8437;
+html,
+body {
+  margin: 0;
+  padding: 0;
+  // height: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.menu-button {
+  position: fixed;
+  z-index: 10;
+  top: 30px;
+  right: 30px;
+  cursor: pointer;
+
+  .bar1,
+  .bar2,
+  .bar3 {
+    width: 35px;
+    height: 3px;
+    background-color: #f8f8f8;
+    margin: 8px 0;
+    transition: 0.4s;
+  }
+
+  &--open {
+    .bar1 {
+      transform: translate(0, 11px) rotate(-45deg);
+    }
+
+    .bar2 {
+      opacity: 0;
+    }
+
+    .bar3 {
+      transform: translate(0, -11px) rotate(45deg);
+    }
+  }
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba($color: $homeBg, $alpha: 0.4);
+  transform: translateX(-100%);
+  transition: transform 1s ease-in-out;
+
+  &--active {
+    transform: translateX(0);
+  }
+
+  nav {
+    height: 100%;
+    ul {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+    .item {
+      flex-grow: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+
+      a:link,
+      a:visited {
+        font-size: 20px;
+        color: white;
+        text-decoration: none;
+        display: block;
+      }
+
+      a:hover,
+      a:active {
+        transform: scale(1.2);
+
+        &::before {
+          content: "";
+          position: absolute;
+          height: 3px;
+          width: 100%;
+          background-color: #fff;
+          left: 0;
+          bottom: 0;
+        }
+      }
+
+      &--1 {
+        background-color: $homeBg;
+        animation: slide-in 0.4s linear 0.2s both;
+      }
+
+      &--2 {
+        background-color: $aboutBg;
+      }
+
+      &--3 {
+        background-color: $skillsBg;
+      }
+
+      &--4 {
+        background-color: $projectsBg;
+      }
+
+      &--5 {
+        background-color: $contactBg;
+      }
+    }
+  }
+}
+
+section {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 54px;
+
+  &#home {
+    background-color: $homeBg;
+    background: url(https://images.unsplash.com/photo-1563089145-599997674d42?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  }
+
+  &#about {
+    background-color: $aboutBg;
+  }
+
+  &#skills {
+    background-color: $skillsBg;
+  }
+
+  &#projects {
+    background-color: $projectsBg;
+  }
+
+  &#contact {
+    background-color: $contactBg;
+  }
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateX(-100%);
+  }
+
+  to {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes slide-out {
+  from {
+    transform: translateX(0%);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}

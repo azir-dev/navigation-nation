@@ -1,13 +1,45 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
   </head>
   <body>
-    <div id="app"></div>
+    <div class="menu-button" id="menu-button">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+    </div>
+    <section id="home">
+      <h1>Home</h1>
+    </section>
+    <section id="about">
+      <h2>About</h2>
+    </section>
+    <section id="skills">
+      <h2>SKILLS</h2>
+    </section>
+    <section id="projects">
+      <h2>PROJECTS</h2>
+    </section>
+    <section id="contact">
+      <h2>CONTACT</h2>
+    </section>
+
+    <!-- Nav -->
+    <div id="overlay" class="overlay">
+      <nav>
+        <ul>
+          <li class="item item--1"><a href="#home">HOME</a></li>
+          <li class="item item--2"><a href="#about">ABOUT</a></li>
+          <li class="item item--3"><a href="#skills">SKILLS</a></li>
+          <li class="item item--4"><a href="#projects">PROJECTS</a></li>
+          <li class="item item--5"><a href="#contact">CONTACT</a></li>
+        </ul>
+      </nav>
+    </div>
     <script type="module" src="/main.js"></script>
   </body>
 </html>
