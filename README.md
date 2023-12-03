@@ -6,6 +6,12 @@
 
 ## 要点文档
 
+> SASS 变量和多种选择器的使用
+>
+> [SASS](https://sass-lang.com/)
+
+>
+
 ## 感谢免费资源提供商
 
 > icon
@@ -13,6 +19,8 @@
 > favicon.ico: [https://favicon.io/emoji-favicons/hear-no-evil-monkey/](https://favicon.io/emoji-favicons/hear-no-evil-monkey/)
 
 ## 技术栈
+
+> [SASS](https://sass-lang.com/)
 
 > [Vite 打包 VanillaJs](https://cn.vitejs.dev/)
 
