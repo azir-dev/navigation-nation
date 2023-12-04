@@ -6,17 +6,23 @@
 
 ## 要点文档
 
-> SASS 变量和多种选择器的使用
+> SASS 变量、嵌套语法和多种选择器的使用
 >
 > [SASS](https://sass-lang.com/)
 
+> CSS Animation
 >
+> [MDN](https://developer.mozilla.org/zh-CN/docs/Web/CSS/animation)
 
 ## 感谢免费资源提供商
 
 > icon
 >
 > favicon.ico: [https://favicon.io/emoji-favicons/hear-no-evil-monkey/](https://favicon.io/emoji-favicons/hear-no-evil-monkey/)
+
+> 字体库
+>
+> [Google Fonts Nova+Square](https://fonts.google.com/specimen/Nova+Square)
 
 ## 技术栈
 
