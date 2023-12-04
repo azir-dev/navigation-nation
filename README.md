@@ -14,6 +14,10 @@
 >
 > [MDN](https://developer.mozilla.org/zh-CN/docs/Web/CSS/animation)
 
+> Vite Sass
+>
+> [Vite CSS 预处理器](https://cn.vitejs.dev/guide/features#css-pre-processors)
+
 ## 感谢免费资源提供商
 
 > icon
